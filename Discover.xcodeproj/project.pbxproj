@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		92B3F71B2A08F8330010CA22 /* DiscoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F71A2A08F8330010CA22 /* DiscoverApp.swift */; };
-		92B3F71D2A08F8330010CA22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F71C2A08F8330010CA22 /* ContentView.swift */; };
 		92B3F71F2A08F8350010CA22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B3F71E2A08F8350010CA22 /* Assets.xcassets */; };
 		92B3F7222A08F8350010CA22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B3F7212A08F8350010CA22 /* Preview Assets.xcassets */; };
 		92B3F72A2A0904D50010CA22 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F7292A0904D50010CA22 /* OnboardingView.swift */; };
@@ -16,12 +15,12 @@
 		92B3F72F2A0913B50010CA22 /* OnboardingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F72E2A0913B50010CA22 /* OnboardingProgressView.swift */; };
 		92B3F7322A0916A30010CA22 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F7312A0916A30010CA22 /* ButtonModifier.swift */; };
 		92B3F7342A09174D0010CA22 /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F7332A09174D0010CA22 /* CardModifier.swift */; };
+		92B3F7372A091DD80010CA22 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F7362A091DD80010CA22 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92B3F7172A08F8330010CA22 /* Discover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B3F71A2A08F8330010CA22 /* DiscoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverApp.swift; sourceTree = "<group>"; };
-		92B3F71C2A08F8330010CA22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		92B3F71E2A08F8350010CA22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92B3F7212A08F8350010CA22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		92B3F7292A0904D50010CA22 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -29,6 +28,7 @@
 		92B3F72E2A0913B50010CA22 /* OnboardingProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProgressView.swift; sourceTree = "<group>"; };
 		92B3F7312A0916A30010CA22 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 		92B3F7332A09174D0010CA22 /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
+		92B3F7362A091DD80010CA22 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				92B3F71A2A08F8330010CA22 /* DiscoverApp.swift */,
-				92B3F71C2A08F8330010CA22 /* ContentView.swift */,
+				92B3F7352A091D830010CA22 /* Login&Register */,
 				92B3F7302A09166E0010CA22 /* ViewModifiers */,
 				92B3F72B2A0910200010CA22 /* Helpers */,
 				92B3F7282A0903600010CA22 /* Onboarding */,
@@ -104,6 +104,14 @@
 				92B3F7332A09174D0010CA22 /* CardModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		92B3F7352A091D830010CA22 /* Login&Register */ = {
+			isa = PBXGroup;
+			children = (
+				92B3F7362A091DD80010CA22 /* LoginView.swift */,
+			);
+			path = "Login&Register";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,10 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				92B3F7322A0916A30010CA22 /* ButtonModifier.swift in Sources */,
+				92B3F7372A091DD80010CA22 /* LoginView.swift in Sources */,
 				92B3F72A2A0904D50010CA22 /* OnboardingView.swift in Sources */,
 				92B3F72F2A0913B50010CA22 /* OnboardingProgressView.swift in Sources */,
 				92B3F72D2A0910370010CA22 /* Colors.swift in Sources */,
-				92B3F71D2A08F8330010CA22 /* ContentView.swift in Sources */,
 				92B3F7342A09174D0010CA22 /* CardModifier.swift in Sources */,
 				92B3F71B2A08F8330010CA22 /* DiscoverApp.swift in Sources */,
 			);
