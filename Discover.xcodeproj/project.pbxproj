@@ -17,6 +17,7 @@
 		92B3F7342A09174D0010CA22 /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F7332A09174D0010CA22 /* CardModifier.swift */; };
 		92B3F7372A091DD80010CA22 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F7362A091DD80010CA22 /* LoginView.swift */; };
 		92B3F7392A0931D50010CA22 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F7382A0931D50010CA22 /* ForgotPasswordView.swift */; };
+		92B3F7402A0967010010CA22 /* UpdatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F73F2A0967010010CA22 /* UpdatePasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		92B3F7332A09174D0010CA22 /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
 		92B3F7362A091DD80010CA22 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		92B3F7382A0931D50010CA22 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		92B3F73F2A0967010010CA22 /* UpdatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				92B3F7362A091DD80010CA22 /* LoginView.swift */,
 				92B3F7382A0931D50010CA22 /* ForgotPasswordView.swift */,
+				92B3F73F2A0967010010CA22 /* UpdatePasswordView.swift */,
 			);
 			path = "Login&Register";
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B3F7402A0967010010CA22 /* UpdatePasswordView.swift in Sources */,
 				92B3F7322A0916A30010CA22 /* ButtonModifier.swift in Sources */,
 				92B3F7372A091DD80010CA22 /* LoginView.swift in Sources */,
 				92B3F7392A0931D50010CA22 /* ForgotPasswordView.swift in Sources */,
