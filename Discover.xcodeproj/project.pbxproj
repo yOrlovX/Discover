@@ -61,9 +61,9 @@
 		92B3F7192A08F8330010CA22 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				92B3F7302A09166E0010CA22 /* ViewModifiers */,
 				92B3F71A2A08F8330010CA22 /* DiscoverApp.swift */,
 				92B3F71C2A08F8330010CA22 /* ContentView.swift */,
+				92B3F7302A09166E0010CA22 /* ViewModifiers */,
 				92B3F72B2A0910200010CA22 /* Helpers */,
 				92B3F7282A0903600010CA22 /* Onboarding */,
 				92B3F71E2A08F8350010CA22 /* Assets.xcassets */,
