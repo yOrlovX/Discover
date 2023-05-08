@@ -18,3 +18,15 @@ struct PrimaryBlueButton: ViewModifier {
       .padding(.horizontal, 20)
   }
 }
+
+struct PrimaryLoginButton: ViewModifier {
+  func body(content: Content) -> some View {
+    content
+      .foregroundColor(.white)
+      .frame(maxWidth: UIScreen.main.bounds.width - 51)
+      .frame(height: 52)
+      .background(Colors.primaryBlue)
+      .cornerRadius(15)
+      
+  }
+}

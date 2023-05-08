@@ -22,7 +22,7 @@ struct LoginView: View {
 
 extension LoginView {
   private var logoContainer: some View {
-    VStack {
+    VStack(spacing: 10) {
       Image("logo")
         .resizable()
         .scaledToFit()
@@ -71,7 +71,7 @@ extension LoginView {
     VStack(spacing: 20) {
       Button(action: {}) {
         Text("Login")
-          .modifier(PrimaryBlueButton())
+          .modifier(PrimaryLoginButton())
       }
       
       HStack {
