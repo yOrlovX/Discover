@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		929264D32A0A31E4004CE2D2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929264D22A0A31E4004CE2D2 /* MainView.swift */; };
 		92B3F71B2A08F8330010CA22 /* DiscoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F71A2A08F8330010CA22 /* DiscoverApp.swift */; };
 		92B3F71F2A08F8350010CA22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B3F71E2A08F8350010CA22 /* Assets.xcassets */; };
 		92B3F7222A08F8350010CA22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B3F7212A08F8350010CA22 /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		929264D22A0A31E4004CE2D2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		92B3F7172A08F8330010CA22 /* Discover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B3F71A2A08F8330010CA22 /* DiscoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverApp.swift; sourceTree = "<group>"; };
 		92B3F71E2A08F8350010CA22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		929264D12A0A31D1004CE2D2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				929264D22A0A31E4004CE2D2 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		92B3F70E2A08F8330010CA22 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +75,7 @@
 		92B3F7192A08F8330010CA22 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				929264D12A0A31D1004CE2D2 /* Main */,
 				92B3F71A2A08F8330010CA22 /* DiscoverApp.swift */,
 				92B3F7352A091D830010CA22 /* Login&Register */,
 				92B3F7302A09166E0010CA22 /* ViewModifiers */,
@@ -193,6 +204,7 @@
 				92B3F7402A0967010010CA22 /* UpdatePasswordView.swift in Sources */,
 				92B3F7322A0916A30010CA22 /* ButtonModifier.swift in Sources */,
 				92B3F7372A091DD80010CA22 /* LoginView.swift in Sources */,
+				929264D32A0A31E4004CE2D2 /* MainView.swift in Sources */,
 				92B3F7392A0931D50010CA22 /* ForgotPasswordView.swift in Sources */,
 				92B3F72A2A0904D50010CA22 /* OnboardingView.swift in Sources */,
 				92B3F72F2A0913B50010CA22 /* OnboardingProgressView.swift in Sources */,
