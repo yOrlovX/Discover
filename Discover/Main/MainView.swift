@@ -23,7 +23,7 @@ struct MainView: View {
           .tabItem {
             Label("Notification", systemImage: "bell")
           }
-        Text("Profile")
+        ProfileView()
           .tabItem {
             Label("Profile", systemImage: "person")
           }
