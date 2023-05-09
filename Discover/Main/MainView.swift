@@ -15,7 +15,7 @@ struct MainView: View {
           .tabItem {
             Label("Home", systemImage: "house")
           }
-        Text("Wishlist")
+        WishlistView()
           .tabItem {
             Label("Wishlist", systemImage: "heart")
           }
