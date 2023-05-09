@@ -19,7 +19,7 @@ struct MainView: View {
           .tabItem {
             Label("Wishlist", systemImage: "heart")
           }
-        Text("Notification")
+        NotificationView()
           .tabItem {
             Label("Notification", systemImage: "bell")
           }

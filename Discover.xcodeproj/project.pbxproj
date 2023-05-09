@@ -10,6 +10,7 @@
 		929264D32A0A31E4004CE2D2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929264D22A0A31E4004CE2D2 /* MainView.swift */; };
 		929264D62A0A3378004CE2D2 /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929264D52A0A3378004CE2D2 /* WishlistView.swift */; };
 		929264D82A0A33FB004CE2D2 /* WishlistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929264D72A0A33FB004CE2D2 /* WishlistCell.swift */; };
+		929264DB2A0A41C6004CE2D2 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929264DA2A0A41C6004CE2D2 /* NotificationView.swift */; };
 		92B3F71B2A08F8330010CA22 /* DiscoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F71A2A08F8330010CA22 /* DiscoverApp.swift */; };
 		92B3F71F2A08F8350010CA22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B3F71E2A08F8350010CA22 /* Assets.xcassets */; };
 		92B3F7222A08F8350010CA22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B3F7212A08F8350010CA22 /* Preview Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		929264D22A0A31E4004CE2D2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		929264D52A0A3378004CE2D2 /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
 		929264D72A0A33FB004CE2D2 /* WishlistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistCell.swift; sourceTree = "<group>"; };
+		929264DA2A0A41C6004CE2D2 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		92B3F7172A08F8330010CA22 /* Discover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B3F71A2A08F8330010CA22 /* DiscoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverApp.swift; sourceTree = "<group>"; };
 		92B3F71E2A08F8350010CA22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			path = Wishlist;
 			sourceTree = "<group>";
 		};
+		929264D92A0A41B9004CE2D2 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				929264DA2A0A41C6004CE2D2 /* NotificationView.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		92B3F70E2A08F8330010CA22 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		92B3F7192A08F8330010CA22 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				929264D92A0A41B9004CE2D2 /* Notification */,
 				929264D42A0A3346004CE2D2 /* Wishlist */,
 				929264D12A0A31D1004CE2D2 /* Main */,
 				92B3F71A2A08F8330010CA22 /* DiscoverApp.swift */,
@@ -218,6 +229,7 @@
 				929264D82A0A33FB004CE2D2 /* WishlistCell.swift in Sources */,
 				92B3F7402A0967010010CA22 /* UpdatePasswordView.swift in Sources */,
 				92B3F7322A0916A30010CA22 /* ButtonModifier.swift in Sources */,
+				929264DB2A0A41C6004CE2D2 /* NotificationView.swift in Sources */,
 				92B3F7372A091DD80010CA22 /* LoginView.swift in Sources */,
 				929264D32A0A31E4004CE2D2 /* MainView.swift in Sources */,
 				92B3F7392A0931D50010CA22 /* ForgotPasswordView.swift in Sources */,
