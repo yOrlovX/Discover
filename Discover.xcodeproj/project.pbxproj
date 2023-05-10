@@ -23,6 +23,8 @@
 		92B3F7372A091DD80010CA22 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F7362A091DD80010CA22 /* LoginView.swift */; };
 		92B3F7392A0931D50010CA22 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F7382A0931D50010CA22 /* ForgotPasswordView.swift */; };
 		92B3F7402A0967010010CA22 /* UpdatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F73F2A0967010010CA22 /* UpdatePasswordView.swift */; };
+		92E3DD0B2A0B8F9A00D4D542 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3DD0A2A0B8F9A00D4D542 /* HomeView.swift */; };
+		92E3DD0D2A0B924600D4D542 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3DD0C2A0B924600D4D542 /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		92B3F7362A091DD80010CA22 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		92B3F7382A0931D50010CA22 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		92B3F73F2A0967010010CA22 /* UpdatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordView.swift; sourceTree = "<group>"; };
+		92E3DD0A2A0B8F9A00D4D542 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		92E3DD0C2A0B924600D4D542 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		92B3F7192A08F8330010CA22 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				92E3DD092A0B8F8D00D4D542 /* Home */,
 				929264DC2A0A5259004CE2D2 /* Profile */,
 				929264D92A0A41B9004CE2D2 /* Notification */,
 				929264D42A0A3346004CE2D2 /* Wishlist */,
@@ -165,6 +170,15 @@
 				92B3F73F2A0967010010CA22 /* UpdatePasswordView.swift */,
 			);
 			path = "Login&Register";
+			sourceTree = "<group>";
+		};
+		92E3DD092A0B8F8D00D4D542 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				92E3DD0A2A0B8F9A00D4D542 /* HomeView.swift */,
+				92E3DD0C2A0B924600D4D542 /* SearchBarView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +254,8 @@
 				929264D82A0A33FB004CE2D2 /* WishlistCell.swift in Sources */,
 				92B3F7402A0967010010CA22 /* UpdatePasswordView.swift in Sources */,
 				92B3F7322A0916A30010CA22 /* ButtonModifier.swift in Sources */,
+				92E3DD0B2A0B8F9A00D4D542 /* HomeView.swift in Sources */,
+				92E3DD0D2A0B924600D4D542 /* SearchBarView.swift in Sources */,
 				929264DB2A0A41C6004CE2D2 /* NotificationView.swift in Sources */,
 				92B3F7372A091DD80010CA22 /* LoginView.swift in Sources */,
 				929264D32A0A31E4004CE2D2 /* MainView.swift in Sources */,
