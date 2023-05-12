@@ -11,6 +11,7 @@ struct SplashView: View {
   
   @State private var animateCircleOffset: CGFloat = 0
   @State private var animateRectangleOffset: CGFloat = 0
+  @State private var animateTextOffset: CGFloat = -40
   @State private var opacity: Double = 0
   @State private var angle = Angle(degrees: 0)
   
@@ -46,12 +47,12 @@ struct SplashView: View {
             
         }
         .shadow(radius: 20)
-//        .rotationEffect(Angle(degrees: 300))
         .rotationEffect(angle)
         
         Text("Discover")
           .font(.system(size: 30, weight: .semibold))
           .opacity(0.6)
+          .offset(x: animateTextOffset)
         
       }
       .onAppear {
@@ -59,6 +60,7 @@ struct SplashView: View {
           animateCircleOffset = 40
           animateRectangleOffset = 15
           opacity = 1
+          animateTextOffset = 0
 //          angle = Angle(degrees: 360)
         }
       }
