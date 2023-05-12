@@ -9,10 +9,26 @@ import SwiftUI
 
 struct HomeView: View {
   @State private var searchText: String = ""
+  let popularPlaceData = PopularPlaceCellModel.mockData
   
     var body: some View {
       VStack {
         exploreSection
+        
+        VStack(alignment: .leading) {
+          Text("Popular Package in asia")
+            .font(.system(size: 18, weight: .semibold))
+          
+          ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 15) {
+              ForEach(popularPlaceData) { datum in
+                PopularPlaceCell(model: datum)
+              }
+            }
+            .padding(.horizontal, 26)
+          }
+        }
+        
         Spacer()
       }
     }
@@ -44,28 +60,28 @@ extension HomeView {
           
       }
       
-      ScrollView(.horizontal) {
-        HStack(spacing: 10) {
-          ForEach(0..<8) { _ in
-            Rectangle()
-              .cornerRadius(15)
-              .frame(maxWidth: 131)
-              .frame(maxHeight: 52)
-              .foregroundColor(.white)
-              .overlay {
-                HStack {
-                  Image(systemName: "heart.fill")
-                    .resizable()
-                    .scaledToFit()
-                  Text("Cat")
-                }
-              }
-            
-          }
-        }
-        .padding(.horizontal ,26)
-      }
-      .background(.red)
+//      ScrollView(.horizontal) {
+//        HStack(spacing: 10) {
+//          ForEach(0..<8) { _ in
+//            Rectangle()
+//              .cornerRadius(15)
+//              .frame(maxWidth: 131)
+//              .frame(maxHeight: 52)
+//              .foregroundColor(.white)
+//              .overlay {
+//                HStack {
+//                  Image(systemName: "heart.fill")
+//                    .resizable()
+//                    .scaledToFit()
+//                  Text("Cat")
+//                }
+//              }
+//
+//          }
+//        }
+//        .padding(.horizontal ,26)
+//      }
+//      .background(.red)
     }
     .edgesIgnoringSafeArea(.top)
   }

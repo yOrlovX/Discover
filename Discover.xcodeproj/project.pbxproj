@@ -25,6 +25,8 @@
 		92B3F7402A0967010010CA22 /* UpdatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3F73F2A0967010010CA22 /* UpdatePasswordView.swift */; };
 		92E3DD0B2A0B8F9A00D4D542 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3DD0A2A0B8F9A00D4D542 /* HomeView.swift */; };
 		92E3DD0D2A0B924600D4D542 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3DD0C2A0B924600D4D542 /* SearchBarView.swift */; };
+		92E3DD0F2A0E3DC900D4D542 /* PopularPlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3DD0E2A0E3DC900D4D542 /* PopularPlaceCell.swift */; };
+		92E3DD112A0E4FFA00D4D542 /* CornerRadiusStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3DD102A0E4FFA00D4D542 /* CornerRadiusStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		92B3F73F2A0967010010CA22 /* UpdatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordView.swift; sourceTree = "<group>"; };
 		92E3DD0A2A0B8F9A00D4D542 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		92E3DD0C2A0B924600D4D542 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		92E3DD0E2A0E3DC900D4D542 /* PopularPlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularPlaceCell.swift; sourceTree = "<group>"; };
+		92E3DD102A0E4FFA00D4D542 /* CornerRadiusStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				92B3F72C2A0910370010CA22 /* Colors.swift */,
+				92E3DD102A0E4FFA00D4D542 /* CornerRadiusStyle.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 			children = (
 				92E3DD0A2A0B8F9A00D4D542 /* HomeView.swift */,
 				92E3DD0C2A0B924600D4D542 /* SearchBarView.swift */,
+				92E3DD0E2A0E3DC900D4D542 /* PopularPlaceCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 				92B3F7322A0916A30010CA22 /* ButtonModifier.swift in Sources */,
 				92E3DD0B2A0B8F9A00D4D542 /* HomeView.swift in Sources */,
 				92E3DD0D2A0B924600D4D542 /* SearchBarView.swift in Sources */,
+				92E3DD0F2A0E3DC900D4D542 /* PopularPlaceCell.swift in Sources */,
 				929264DB2A0A41C6004CE2D2 /* NotificationView.swift in Sources */,
 				92B3F7372A091DD80010CA22 /* LoginView.swift in Sources */,
+				92E3DD112A0E4FFA00D4D542 /* CornerRadiusStyle.swift in Sources */,
 				929264D32A0A31E4004CE2D2 /* MainView.swift in Sources */,
 				92B3F7392A0931D50010CA22 /* ForgotPasswordView.swift in Sources */,
 				92B3F72A2A0904D50010CA22 /* OnboardingView.swift in Sources */,
