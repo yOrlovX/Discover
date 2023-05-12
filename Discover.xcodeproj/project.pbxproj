@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		924A82412A0E761400BB992B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924A82402A0E761400BB992B /* SplashView.swift */; };
 		929264D32A0A31E4004CE2D2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929264D22A0A31E4004CE2D2 /* MainView.swift */; };
 		929264D62A0A3378004CE2D2 /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929264D52A0A3378004CE2D2 /* WishlistView.swift */; };
 		929264D82A0A33FB004CE2D2 /* WishlistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929264D72A0A33FB004CE2D2 /* WishlistCell.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		924A82402A0E761400BB992B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		929264D22A0A31E4004CE2D2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		929264D52A0A3378004CE2D2 /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
 		929264D72A0A33FB004CE2D2 /* WishlistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistCell.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		924A823F2A0E760400BB992B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				924A82402A0E761400BB992B /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		929264D12A0A31D1004CE2D2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				92B3F71A2A08F8330010CA22 /* DiscoverApp.swift */,
+				924A823F2A0E760400BB992B /* Splash */,
 				92E3DD092A0B8F8D00D4D542 /* Home */,
 				929264DC2A0A5259004CE2D2 /* Profile */,
 				929264D92A0A41B9004CE2D2 /* Notification */,
@@ -270,6 +281,7 @@
 				92B3F7392A0931D50010CA22 /* ForgotPasswordView.swift in Sources */,
 				92B3F72A2A0904D50010CA22 /* OnboardingView.swift in Sources */,
 				92B3F72F2A0913B50010CA22 /* OnboardingProgressView.swift in Sources */,
+				924A82412A0E761400BB992B /* SplashView.swift in Sources */,
 				929264D62A0A3378004CE2D2 /* WishlistView.swift in Sources */,
 				92B3F72D2A0910370010CA22 /* Colors.swift in Sources */,
 				92B3F7342A09174D0010CA22 /* CardModifier.swift in Sources */,
