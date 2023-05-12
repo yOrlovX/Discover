@@ -10,6 +10,7 @@ import SwiftUI
 struct PopularPlaceCell: View {
   
   let model: PopularPlaceCellModel
+  @State private var isFavorite: Bool = false
   
   var body: some View {
     VStack {
@@ -20,6 +21,28 @@ struct PopularPlaceCell: View {
           .frame(maxHeight: 236)
           .frame(maxWidth: 230)
           .cornerRadius(15, corners: [.topLeft, .topRight])
+          .overlay {
+            VStack {
+              HStack {
+                Spacer()
+                Circle()
+                  .frame(width: 36, height: 36)
+                  .foregroundColor(.white)
+                  .padding(.top, 16)
+                  .padding(.trailing, 16)
+                  .onTapGesture {
+                    isFavorite.toggle()
+                  }
+                  .overlay {
+                    Image(systemName: isFavorite ? "heart.fill" : "heart")
+                      .foregroundColor(isFavorite ? .red : .black)
+                      .padding(.top, 16)
+                      .padding(.trailing, 16)  
+                  }
+              }
+              Spacer()
+            }
+          }
         Text(model.placeName)
           .font(.system(size: 16, weight: .semibold))
           .padding(.leading, 10)
@@ -42,7 +65,7 @@ struct PopularPlaceCell: View {
       }
     }
     .overlay(RoundedRectangle(cornerRadius: 15)
-        .stroke(.gray.opacity(0.6), lineWidth: 1))
+      .stroke(.gray.opacity(0.6), lineWidth: 1))
   }
 }
 
