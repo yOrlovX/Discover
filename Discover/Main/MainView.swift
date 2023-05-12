@@ -11,7 +11,7 @@ struct MainView: View {
     var body: some View {
       //MARK: Default tab items color
       TabView {
-        Text("Home")
+        HomeView()
           .tabItem {
             Label("Home", systemImage: "house")
           }

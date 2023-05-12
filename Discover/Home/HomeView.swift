@@ -14,22 +14,11 @@ struct HomeView: View {
     var body: some View {
       VStack {
         exploreSection
+        popularPlaceSection
         
-        VStack(alignment: .leading) {
-          Text("Popular Package in asia")
-            .font(.system(size: 18, weight: .semibold))
-          
-          ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 15) {
-              ForEach(popularPlaceData) { datum in
-                PopularPlaceCell(model: datum)
-              }
-            }
-            .padding(.horizontal, 26)
-          }
-        }
         
-        Spacer()
+        
+//        Spacer()
       }
     }
 }
@@ -39,7 +28,7 @@ extension HomeView {
     ZStack {
       Image("2")
         .resizable()
-        .scaledToFit()
+        .scaledToFill()
         .shadow(radius: 10)
       VStack(alignment: .leading) {
         Text("Explore the world today")
@@ -84,6 +73,22 @@ extension HomeView {
 //      .background(.red)
     }
     .edgesIgnoringSafeArea(.top)
+  }
+  
+  private var popularPlaceSection: some View {
+    VStack(alignment: .leading) {
+      Text("Popular Package in asia")
+        .font(.system(size: 18, weight: .semibold))
+      
+      ScrollView(.horizontal, showsIndicators: false) {
+        HStack(spacing: 15) {
+          ForEach(popularPlaceData) { datum in
+            PopularPlaceCell(model: datum)
+          }
+        }
+        .padding(.horizontal, 26)
+      }
+    }
   }
 }
 

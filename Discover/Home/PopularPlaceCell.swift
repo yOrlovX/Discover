@@ -16,15 +16,16 @@ struct PopularPlaceCell: View {
       VStack(alignment: .leading, spacing: 5) {
         Image(model.image)
           .resizable()
-          .scaledToFit()
+          .scaledToFill()
           .frame(maxHeight: 236)
+          .frame(maxWidth: 230)
           .cornerRadius(15, corners: [.topLeft, .topRight])
         Text(model.placeName)
           .font(.system(size: 16, weight: .semibold))
           .padding(.leading, 10)
           .padding(.top, 10)
         HStack(spacing: 10) {
-          ForEach(0..<4) { item in
+          ForEach(0..<5) { item in
             Image(systemName: "star.fill")
               .frame(width: 13, height: 12)
               .foregroundColor(item < 3 ? .yellow : .gray)
@@ -64,7 +65,7 @@ struct PopularPlaceCellModel : Identifiable {
 
 struct PopularPlaceCell_Previews: PreviewProvider {
   
-  static let previewData = PopularPlaceCellModel(image: "3", placeName: "Koh Rong Samloem", description: "Lorem ipsum dolor sit amet...")
+  static let previewData = PopularPlaceCellModel(image: "6", placeName: "Koh Rong Samloem", description: "Lorem ipsum dolor sit amet...")
   
   static var previews: some View {
     PopularPlaceCell(model: previewData)
