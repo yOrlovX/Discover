@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		924A82412A0E761400BB992B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924A82402A0E761400BB992B /* SplashView.swift */; };
+		924A82452A0EB26800BB992B /* TourDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924A82442A0EB26800BB992B /* TourDetailView.swift */; };
 		929264D32A0A31E4004CE2D2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929264D22A0A31E4004CE2D2 /* MainView.swift */; };
 		929264D62A0A3378004CE2D2 /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929264D52A0A3378004CE2D2 /* WishlistView.swift */; };
 		929264D82A0A33FB004CE2D2 /* WishlistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929264D72A0A33FB004CE2D2 /* WishlistCell.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		924A82402A0E761400BB992B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		924A82442A0EB26800BB992B /* TourDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDetailView.swift; sourceTree = "<group>"; };
 		929264D22A0A31E4004CE2D2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		929264D52A0A3378004CE2D2 /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
 		929264D72A0A33FB004CE2D2 /* WishlistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistCell.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				92E3DD0A2A0B8F9A00D4D542 /* HomeView.swift */,
 				92E3DD0C2A0B924600D4D542 /* SearchBarView.swift */,
 				92E3DD0E2A0E3DC900D4D542 /* PopularPlaceCell.swift */,
+				924A82442A0EB26800BB992B /* TourDetailView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				92E3DD0D2A0B924600D4D542 /* SearchBarView.swift in Sources */,
 				92E3DD0F2A0E3DC900D4D542 /* PopularPlaceCell.swift in Sources */,
 				929264DB2A0A41C6004CE2D2 /* NotificationView.swift in Sources */,
+				924A82452A0EB26800BB992B /* TourDetailView.swift in Sources */,
 				92B3F7372A091DD80010CA22 /* LoginView.swift in Sources */,
 				92E3DD112A0E4FFA00D4D542 /* CornerRadiusStyle.swift in Sources */,
 				929264D32A0A31E4004CE2D2 /* MainView.swift in Sources */,
