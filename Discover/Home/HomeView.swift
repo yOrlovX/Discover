@@ -13,13 +13,12 @@ struct HomeView: View {
   
     var body: some View {
       VStack {
-        exploreSection
-        popularPlaceSection
-        
-        
-        
-//        Spacer()
+        ScrollView(.vertical, showsIndicators: false) {
+          exploreSection
+          popularPlaceSection
+        }
       }
+      .edgesIgnoringSafeArea(.top)
     }
 }
 
@@ -72,7 +71,6 @@ extension HomeView {
 //      }
 //      .background(.red)
     }
-    .edgesIgnoringSafeArea(.top)
   }
   
   private var popularPlaceSection: some View {

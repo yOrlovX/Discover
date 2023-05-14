@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum OnboardingState {
-  case first, second, third
+  case first, second, third, main
 }
 
 struct OnboardingView: View {
@@ -17,14 +17,16 @@ struct OnboardingView: View {
   
   var body: some View {
     ZStack {
-      switch currentState {
-      case .first:
-        firstOnboardingState
-      case .second:
-        secondOnboardingState
-      case .third:
-        thirdOnboardingState
-      }
+        switch currentState {
+        case .first:
+          firstOnboardingState
+        case .second:
+          secondOnboardingState
+        case .third:
+          thirdOnboardingState
+        case .main:
+          MainView()
+        }
     }
   }
 }
@@ -117,7 +119,7 @@ extension OnboardingView {
                 .font(.system(size: 15, weight: .regular))
                 .padding(.horizontal, 20)
             }
-            Button(action: {}) {
+            Button(action: { currentState = .main }) {
               Text("Next")
                 .modifier(PrimaryBlueButton())
             }
