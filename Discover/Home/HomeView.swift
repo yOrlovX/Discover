@@ -11,15 +11,15 @@ struct HomeView: View {
   @State private var searchText: String = ""
   let popularPlaceData = PopularPlaceCellModel.mockData
   
-    var body: some View {
-      VStack {
-        ScrollView(.vertical, showsIndicators: false) {
-          exploreSection
-          popularPlaceSection
-        }
+  var body: some View {
+    VStack {
+      ScrollView(.vertical, showsIndicators: false) {
+        exploreSection
+        popularPlaceSection
       }
-      .edgesIgnoringSafeArea(.top)
     }
+    .edgesIgnoringSafeArea(.top)
+  }
 }
 
 extension HomeView {
@@ -29,7 +29,7 @@ extension HomeView {
         .resizable()
         .scaledToFill()
         .shadow(radius: 10)
-      VStack(alignment: .leading) {
+      VStack(alignment: .leading, spacing: 20) {
         Text("Explore the world today")
           .padding(.horizontal, 26)
           .foregroundColor(.white)
@@ -44,32 +44,8 @@ extension HomeView {
         
         SearchBarView(searchText: $searchText)
         
-        
-          
+        categorySection
       }
-      
-//      ScrollView(.horizontal) {
-//        HStack(spacing: 10) {
-//          ForEach(0..<8) { _ in
-//            Rectangle()
-//              .cornerRadius(15)
-//              .frame(maxWidth: 131)
-//              .frame(maxHeight: 52)
-//              .foregroundColor(.white)
-//              .overlay {
-//                HStack {
-//                  Image(systemName: "heart.fill")
-//                    .resizable()
-//                    .scaledToFit()
-//                  Text("Cat")
-//                }
-//              }
-//
-//          }
-//        }
-//        .padding(.horizontal ,26)
-//      }
-//      .background(.red)
     }
   }
   
@@ -77,6 +53,7 @@ extension HomeView {
     VStack(alignment: .leading) {
       Text("Popular Package in asia")
         .font(.system(size: 18, weight: .semibold))
+        .padding(.horizontal, 26)
       
       ScrollView(.horizontal, showsIndicators: false) {
         HStack(spacing: 15) {
@@ -88,10 +65,33 @@ extension HomeView {
       }
     }
   }
+  
+  private var categorySection: some View {
+    ScrollView(.horizontal) {
+      HStack(spacing: 10) {
+        ForEach(0..<3) { _ in
+          HStack {
+            Image(systemName: "heart.fill")
+              .resizable()
+              .scaledToFit()
+              .frame(width: 17, height: 17)
+              .foregroundColor(.black)
+            Text("Category")
+              .font(.system(size: 12, weight: .regular))
+              .foregroundColor(.black)
+          }
+          .padding()
+          .background(.white)
+          .cornerRadius(15)
+        }
+      }
+      .padding(.horizontal ,26)
+    }
+  }
 }
 
 struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
+  static var previews: some View {
+    HomeView()
+  }
 }
